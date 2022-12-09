@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="CSS/lab.css">
+   
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form>
+                <div class="con">
+
+
+                    <h2>1.Your Contact Details</h2>
+
+                    <input type="text" placeholder="Full Name" required>
+
+                    <input type="text" placeholder="Patient Id if Exist" required>
+                    <br>
+
+                    <input type="text" placeholder="Contact Number" min="6000000000" max="9999999999" required>
+
+                    <input type="email" placeholder="Email Id" required>
+                    <br>
+
+
+                </div>
+                <div class="con">
+                    <h2>2.Address</h2>
+
+                    <input type="text" placeholder="H-No" required>
+
+                    <input type="text" placeholder="Street" required>
+                    <br>
+
+                    <input type="text" placeholder="Area" required>
+                    <br>
+
+                    <label for="city">
+                        <h3>Destrict</h3>
+                    </label>
+
+
+                    <select id="city">
+                        <option value="choose">Choose</option>
+                        <option value="dhule">Dhule</option>
+                        <option value="nashik">Nashik</option>
+                        <option value="pune">Pune</option>
+
+                    </select>
+                    <br>
+                </div>
+
+                <div class="check">
+                    <h2>3.Choose the test type</h2>
+
+                    <input type="checkbox" checked id="vehicle1" name="vehicle1" value="cbc">
+                    <label for="vehicle1" d>CBC</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="cu">
+                    <label for="vehicle2"> Complete Urine</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="lp">
+                    <label for="vehicle3"> Lipid Profile</label><br>
+                    <input type="checkbox" id="vehicle4" name="vehicle1" value="tsh">
+                    <label for="vehicle4" d>Thyroid Stimulating Hormone(TSH)</label><br>
+                    <input type="checkbox" id="vehicle5" name="vehicle1" value="gt">
+                    <label for="vehicle5" d>Glucose Test</label><br>
+
+                </div>
+                <h3>4.Do you want hard copy of the report also?</h3>
+
+                <input type="radio" id="html" name="fav_language" value="yes">
+                <label for="html">YES</label><br>
+                <input type="radio" id="html" name="fav_language" value="NO">
+                <label for="html">NO</label><br>
+
+
+                <h3>5.Select Your Comfortable Date And Time.</h3>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+                <label for="time"> Time:</label>
+                <input type="time" id="time" name="time">
+                <br><br>
+                <small id="small">Lab hours are 9am to 6pm.</small>
+                <br><br>
+                <div class="btn">
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- background image -->
+        <div class="card1">
+        </div>
+    </div>
+
+</body>
+
+</html>
